@@ -26,7 +26,6 @@
             class="absolute inset-0 w-auto h-auto opacity-50 pointer-events-none"
             style="max-width: 100%; max-height: 50%; object-fit: cover;"
           >
-            <source src="/img/title-homepage.mov" type="video/mp4">
           </video>
   
           <!-- Text and Navigation -->
