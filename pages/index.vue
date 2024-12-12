@@ -86,6 +86,8 @@ onMounted(async () => {
 
 <template>
   <div>
+    <!-- ITS HEEEEEEERE -->
+    <cursor />
     <!-- Loading state -->
     <div v-if="isLoading" class="flex items-center justify-center h-screen">
       <p>Loading...</p>
@@ -105,6 +107,7 @@ onMounted(async () => {
           class="absolute inset-0 bg-cover bg-center"
           :style="{ backgroundImage: homepageSettings?.thumbnail ? `url(${homepageSettings.thumbnail})` : '' }"
         ></div>
+        
 
         
 
@@ -113,11 +116,12 @@ onMounted(async () => {
           <Drawer />
           
         </div>
-        <div class="gif-container">
+        <div class="gif-container animate-fade-up animate-delay-3000 animate-ease-in">
           <img id="titleGif" src="/img/title.png" />
         </div>
-        <div>
 
+        <div class="hmpg animate-fade-up animate-ease-in">
+          <img src="/img/homepage-layer.png" />
         </div>
 
         <!-- Info section with typewriter effect -->
@@ -181,13 +185,13 @@ onMounted(async () => {
 
 .gif-container {
   position: fixed;
-  top: 20%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   mix-blend-mode: screen;
+  filter: brightness(200%);
 }
 
 .gif-container img {
@@ -196,4 +200,27 @@ onMounted(async () => {
   width: auto;
   height: auto;
 }
+
+.hmpg {
+  position: fixed;
+  bottom: 0;
+  left: 0%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Optional: Ensures clicks pass through to layers below */
+  mix-blend-mode: multiply;
+  filter: brightness(200%);
+}
+
+.hmpg img {
+  width: 100%; /* Ensures the image takes the full width of the canvas */
+  height: auto; /* Keeps aspect ratio */
+  object-fit: cover; /* Ensures the image fills its container without distortion */
+}
+
 </style>
+
+

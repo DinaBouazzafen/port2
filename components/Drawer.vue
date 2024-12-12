@@ -38,7 +38,7 @@
 import { ref } from 'vue'
 import type { DrawerProps } from 'element-plus'
 const drawer = ref(false)
-const direction = ref<DrawerProps['direction']>('ltr')
+const direction = ref<DrawerProps['direction']>('rtl')
 </script>
 
 <style>

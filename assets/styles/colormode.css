@@ -2,7 +2,8 @@
 body {
     background-color: #eeeeeb;
     color: rgba(0,0,0,0.8);
-    }
+}
+
     .light-mode body {
     background-color: #e2e3e5;
     color: #161717;

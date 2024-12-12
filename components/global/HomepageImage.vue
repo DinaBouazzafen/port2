@@ -13,7 +13,7 @@
       <div class="pr-5">
         <Drawer />
       </div>
-  
+      
       <!-- Info Section -->
       <div class="info flex flex-col items-center justify-center h-screen">
         <div class="container relative text-left p-1 lg:p-20">
