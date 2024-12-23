@@ -5,7 +5,7 @@
     :key="post.slug"
     >
     <NuxtLink :to="post._path" >
-        <li class="">{{ post.title }}</li>
+        <li class="fjalla text-2xl">{{ post.title }}</li>
     </NuxtLink>
   </ul>
   <hr>

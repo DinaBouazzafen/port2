@@ -1,26 +1,26 @@
 /* Body element */
 body {
-    background-color: #eeeeeb;
-    color: rgba(0,0,0,0.8);
+    background-color: #000000;
+    color: rgba(255, 0, 0, 0.8);
 }
 
     .light-mode body {
-    background-color: #e2e3e5;
-    color: #161717;
+    background-color: #3269ffa4;
+    color: #00fffb;
     }
-    .el-drawer {
-        background-color: rgba(255, 255, 255, 0.99);
+    .light-mode .el-drawer {
+        background-color: #ff000032;
     }
     /* */
     .dark-mode body {
-    background-color: #161715;
-    color: #ebf4f1;
+    background-color: #800000;
+    color: #ff0000;
     }
     .dark-mode .backcolor{
-        background-color: #161715;
+        background-color: #00353d;
     }
     .dark-mode .el-drawer {
-        background-color: rgba(30, 30, 30, 0.98);
+        background-color: rgba(0, 234, 255, 0.492);
       }
     /* */
     .gray-mode body {

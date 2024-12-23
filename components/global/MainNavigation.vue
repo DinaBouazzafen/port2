@@ -1,12 +1,12 @@
 <template>
-  <div class="">
+  <div class="text-xl fjalla">
     <ul 
       v-for="post in folders"
       :key="post.slug"
       >
       <NuxtLink 
         :to="post._path" 
-        class="text-2xl" 
+        class="" 
       >
         {{ post.title }}
       </NuxtLink>

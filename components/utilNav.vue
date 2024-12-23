@@ -2,7 +2,7 @@
   <div
   class="opacity-50 animate-fade animate-once animate-delay-[100ms]">
     <div
-    class="text-xs mb-3"
+    class="text-xs mb-3 hnb"
     >{{ settings.copyright }}
     </div>
   </div>

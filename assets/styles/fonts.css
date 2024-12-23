@@ -1,7 +1,88 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Burned&display=swap');
+@font-face {
+  font-family: 'Minbus'; /* Name your font family */
+  src: url('/fonts/Minbus.otf'); /* Locate the .ttf file within your directory*/
+}
 
+@font-face {
+  font-family: 'HNB'; /* Name your font family */
+  src: url('/fonts/HeadingNowB.ttf'); 
+}
+@font-face {
+  font-family: 'Hostil'; /* Name your font family */
+  src: url('/fonts/HostilGradient.ttf'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: 'Codebars'; /* Name your font family */
+  src: url('/fonts/Codebars.ttf'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: 'Sango'; /* Name your font family */
+  src: url('/fonts/Sango.otf'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: 'Andoria'; /* Name your font family */
+  src: url('/fonts/AndoriaRegular.ttf'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: 'Propix'; /* Name your font family */
+  src: url('/fonts/Propix.ttf'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: 'HN'; /* Name your font family */
+  src: url('/fonts/HeadingNow.ttf'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: 'HNMI'; /* Name your font family */
+  src: url('/fonts/HeadingNowMI.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+.hn{
+  font-family: "HN", sans-serif;
+  font-style: normal;
+} 
+.hnb{
+  font-family: "HNB", sans-serif;
+  font-style: normal;
+} 
+.hnmi{
+  font-family: "HNMI", sans-serif;
+  font-style: normal;
+} 
+.propix{
+  font-family: "Propix", sans-serif;
+  font-style: normal;
+} 
+.andoria{
+  font-family: "Andoria", sans-serif;
+  font-style: normal;
+} 
+.sango{
+  font-family: "Sango", sans-serif;
+  font-style: normal;
+} 
+.hostil{
+  font-family: "Hostil", sans-serif;
+  font-style: normal;
+} 
+.code{
+  font-family: "Codebars", sans-serif;
+  font-style: normal;
+} 
+
+.minbus{
+  font-family: "Minbus", sans-serif;
+  font-style: normal;
+}
+
+.fjalla {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .montserrat-bold {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

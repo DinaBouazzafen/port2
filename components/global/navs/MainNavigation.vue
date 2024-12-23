@@ -1,9 +1,9 @@
-<template>
+<!-- <template>
   <div>
     <div v-for="(posts, folderName) in folders" :key="folderName" class="">
       <ul>
         <li v-for="post in posts" :key="post.slug" class="pb-1 md:pb-2 lg:pb-3">
-          <NuxtLink :to="post._path" class="font-bold text-4xl lg:text-6xl xl:text-6xl">
+          <NuxtLink :to="post._path" class="fjalla text-xl lg:text-3xl xl:text-3xl">
             {{ post.title }}
           </NuxtLink>
         </li>
@@ -68,4 +68,76 @@ onMounted(() => {
   // Assign the grouped and sorted posts to the folders ref
   folders.value = grouped;
 });
+</script> -->
+
+<template>
+  <div>
+    <ul class="ml-5">
+      <!-- homepage -->
+      <li class="pb-6 md:pb-7 lg:pb-8 ">
+        <NuxtLink to="/" class="hnmi text-2xl lg:text-4xl xl:text-4xl">
+          Homepage
+        </NuxtLink>
+      </li>
+      <!-- About Me -->
+      <li class="pb-6 md:pb-7 lg:pb-8 ">
+        <NuxtLink to="/aboutMe" class="hnmi text-2xl lg:text-4xl xl:text-4xl">
+          About me
+        </NuxtLink>
+      </li>
+
+      <!-- Selected Works (Link + Collapsible) -->
+      <li class="pb-3 md:pb-5 lg:pb-6 flex items-center">
+        <!-- Direct link to Selected Works page -->
+        <NuxtLink to="/selected-works" class="hnmi text-2xl lg:text-4xl xl:text-4xl mr-2">
+          Selected works
+        </NuxtLink>
+        <!-- Toggle button for sub-categories -->
+        <button
+          @click="toggleSelectedWorks"
+          class="focus:outline-none text-xl lg:text-3xl xl:text-3xl"
+        >
+        ↯
+        </button>
+      </li>
+      <li v-if="showSelectedWorks" class="ml-5 hn">
+        <ul>
+          <li class="pb-3">
+            <NuxtLink to="/selected-works/category1">Graphic design</NuxtLink>
+          </li>
+          <li class="pb-3">
+            <NuxtLink to="/selected-works/category2">Motion design</NuxtLink>
+          </li>
+          <li class="pb-3">
+            <NuxtLink to="/selected-works/category3">Mixed media</NuxtLink>
+          </li>
+          <li class="pb-6">
+            <NuxtLink to="/selected-works/category4">Random works</NuxtLink>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Contact Me -->
+      <li class="pb-6 md:pb-7 lg:pb-8 ">
+        <NuxtLink to="/contact" class="hnmi text-2xl lg:text-4xl xl:text-4xl">
+          Contact me
+        </NuxtLink>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+// State to control the display of Selected Works submenu
+const showSelectedWorks = ref(false);
+
+function toggleSelectedWorks() {
+  showSelectedWorks.value = !showSelectedWorks.value;
+}
 </script>
+
+<style scoped>
+
+</style>

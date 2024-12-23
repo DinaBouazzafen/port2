@@ -1,5 +1,5 @@
 <template>
-    <div class="opacity-80 animate-fade animate-once animate-delay-[10ms] pt-5">
+    <div class="opacity-50 animate-fade animate-once animate-delay-[10ms] pt-5">
 
       <div v-if="navigations.mainmenu.mainavigation_on_off">
         <div class="animate-fade animate-once animate-delay-[150ms]">
