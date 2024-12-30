@@ -5,8 +5,8 @@ body {
 }
 
     .light-mode body {
-    background-color: #3269ffa4;
-    color: #00fffb;
+    background-color: #00d0ff;
+    color: #800000;
     }
     .light-mode .el-drawer {
         background-color: #ff000032;
@@ -14,7 +14,7 @@ body {
     /* */
     .dark-mode body {
     background-color: #800000;
-    color: #ff0000;
+    color: #00fffb;
     }
     .dark-mode .backcolor{
         background-color: #00353d;

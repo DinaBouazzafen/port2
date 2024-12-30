@@ -52,8 +52,11 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="full-container">
+  <div>
     <cursor />
+  </div>
+  <div class="full-container">
+    
 
     <!-- Loading state -->
     <div v-if="isLoading" class="flex items-center justify-center h-screen">
@@ -64,15 +67,14 @@ onMounted(async () => {
     <div v-else-if="hasError" class="flex items-center justify-center h-screen">
       <p>Error loading settings. Please try again later.</p>
     </div>
-
+    
     <!-- Main content -->
-    <div v-else class="h-screen relative power-of-light-bg">
+    <div v-else class="h-screen relative">
       <!-- You can now use colorMode.preference here -->
-      <p class="fixed top-5 left-5 text-white">Current Color Mode: {{ colorMode.value }}</p>
-
-      <div class="relative h-full">
+      <div class="absolute inset-0 background"></div>
+      <div class="relative h-full power-of-light-bg">
         <!-- Background image -->
-        <div class="absolute inset-0 bg-cover bg-center"></div>
+        <div class="absolute inset-0"></div>
         
         <!-- Drawer or other components -->
         <div class="relative z-10 pr-5">
@@ -104,6 +106,23 @@ onMounted(async () => {
   overflow: hidden;
   height: 100vh;
   width: 100%;
+  z-index: 0;        
+
+}
+
+.background {
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  width: 100%;  
+  height: 100%;  
+  z-index: -1;        
+  background-image: url('/img/homepage-background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+
 }
 
 .power-of-light-bg {
@@ -111,28 +130,13 @@ onMounted(async () => {
     circle 200px at var(--mouse-x) var(--mouse-y),
     rgb(255, 255, 255),
     rgba(255, 1, 1, 0.43)
-  ),
-  url('/img/homepage-background.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: difference;
-  transition: background 0.2s;
+  );
+  z-index: 900;
+  mix-blend-mode: difference;
 }
 
-.power-of-light-bg-dark {
-  background: radial-gradient(
-    circle 200px at var(--mouse-x) var(--mouse-y),
-    rgb(255, 255, 255),
-    rgba(255, 1, 1, 0.43)
-  ),
-  url('/img/homepage-background.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: difference;
-  transition: background 0.2s;
-}
+
+
 
 
 .gif-container {

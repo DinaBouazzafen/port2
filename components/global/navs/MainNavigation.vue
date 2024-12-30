@@ -89,7 +89,7 @@ onMounted(() => {
       <!-- Selected Works (Link + Collapsible) -->
       <li class="pb-3 md:pb-5 lg:pb-6 flex items-center">
         <!-- Direct link to Selected Works page -->
-        <NuxtLink to="/selected-works" class="hnmi text-2xl lg:text-4xl xl:text-4xl mr-2">
+        <NuxtLink to="/page" class="hnmi text-2xl lg:text-4xl xl:text-4xl mr-2">
           Selected works
         </NuxtLink>
         <!-- Toggle button for sub-categories -->
@@ -103,23 +103,20 @@ onMounted(() => {
       <li v-if="showSelectedWorks" class="ml-5 hn">
         <ul>
           <li class="pb-3">
-            <NuxtLink to="/selected-works/category1">Graphic design</NuxtLink>
+            <NuxtLink to="/categories/graphicDesign">Graphic design</NuxtLink>
           </li>
           <li class="pb-3">
-            <NuxtLink to="/selected-works/category2">Motion design</NuxtLink>
+            <NuxtLink to="/categories/motion">Motion design</NuxtLink>
           </li>
           <li class="pb-3">
-            <NuxtLink to="/selected-works/category3">Mixed media</NuxtLink>
-          </li>
-          <li class="pb-6">
-            <NuxtLink to="/selected-works/category4">Random works</NuxtLink>
+            <NuxtLink to="/categories/mixedMedia">Mixed media</NuxtLink>
           </li>
         </ul>
       </li>
 
       <!-- Contact Me -->
       <li class="pb-6 md:pb-7 lg:pb-8 ">
-        <NuxtLink to="/contact" class="hnmi text-2xl lg:text-4xl xl:text-4xl">
+        <NuxtLink to="/contactMe" class="hnmi text-2xl lg:text-4xl xl:text-4xl">
           Contact me
         </NuxtLink>
       </li>
