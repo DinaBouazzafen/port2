@@ -43,8 +43,8 @@
   </script>
   
   <style scoped>
-  .bg{
-    
+  .drawer{
+    mix-blend-mode: difference;
   }
   .contact-me {
     position: relative;

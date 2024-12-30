@@ -37,7 +37,7 @@
     </div>
 
     <!-- Loading Drawer component -->
-    <div class="absolute top-0 right-0 z-10 pr-5">
+    <div class="drawer absolute top-0 right-0 z-10 pr-5">
       <Drawer/> 
     </div>
 

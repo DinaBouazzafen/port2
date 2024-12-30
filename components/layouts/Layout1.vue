@@ -102,7 +102,9 @@ defineProps(['data', 'formatDate']);
 </script>
 
 <style scoped>
+
 .video-container {
+
   position: relative;
   width: 100vw;
   height: 100vh;
