@@ -8,8 +8,7 @@ imagegallery:
     - /img/lexi-mockup-logo.png
     - /img/mimounia-logo-poster.png
     - /img/nosa-mockup.png
-
-thumbnail: /img/nosa-mockup.png
+thumbnail: /img/nosa.gif
 date: 2024-10-09T17:46:19.079Z
 layoutpage: layout2
 promoted: "0"

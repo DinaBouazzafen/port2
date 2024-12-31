@@ -3,17 +3,28 @@
     <cursor/>
     <ClientOnly>
       <div class="above relative max-h-screen overflow-hidden z-1">
-        <!-- Lazy loading applied to NuxtImg -->
+        <!-- Lazy loading applied to NuxtImg or img -->
         <div class="img">
-          <NuxtImg
-            v-if="data.thumbnail"
-            :src="data.thumbnail"
-            class="w-screen opacity-90 bg-cover hnmi"
-            :alt="`Thumbnail for ${data.title}`"
-            format="webp"
-            loading="lazy"
-            @load="imageLoaded = true"
-          />
+          <template v-if="data.thumbnail">
+            <!-- Check if the thumbnail is a GIF -->
+            <img
+              v-if="isGif(data.thumbnail)"
+              :src="data.thumbnail"
+              class="w-screen opacity-90 bg-cover hnmi"
+              :alt="`Thumbnail for ${data.title}`"
+              loading="lazy"
+              @load="imageLoaded = true"
+            />
+            <NuxtImg
+              v-else
+              :src="data.thumbnail"
+              class="w-screen opacity-90 bg-cover hnmi"
+              :alt="`Thumbnail for ${data.title}`"
+              format="webp"
+              loading="lazy"
+              @load="imageLoaded = true"
+            />
+          </template>
         </div>
         <div v-if="!imageLoaded" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75">
           <div class="spinner"></div>
@@ -93,6 +104,11 @@ const imageLoaded = ref(false);
 const scrollToDrawer = () => {
   const drawerElement = document.querySelector(".drawer");
   drawerElement.scrollIntoView({ behavior: "smooth" });
+};
+
+// Check if the file is a GIF
+const isGif = (url) => {
+  return url.toLowerCase().endsWith('.gif');
 };
 
 defineProps(['data', 'formatDate']);
