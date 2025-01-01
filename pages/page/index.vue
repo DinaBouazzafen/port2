@@ -2,6 +2,7 @@
   <div>
     <div class="pr-5">
       <Drawer />
+      <cursor />
     </div>
     <main class="mx-auto space-y-6 px-4 mb-20">
       <!-- Title Image -->
