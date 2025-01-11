@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { useRouter } from 'vue-router';
-import { useColorMode } from '@vueuse/core';
 
-// Retrieve the global colorMode state
-const colorMode = useColorMode();
-
+// try
 let p5Instance = null;
 const p5Container = ref(null);
+const colorMode = useColorMode();
+
 
 // Reactive state
 const router = useRouter();
@@ -24,6 +23,18 @@ const handleMouseMove = (e: MouseEvent) => {
   document.documentElement.style.setProperty('--mouse-x', `${xPercent}%`);
   document.documentElement.style.setProperty('--mouse-y', `${yPercent}%`);
 };
+watch(
+  () => colorMode.preference,
+  (newMode) => {
+    if (newMode === 'light') {
+      console.log('Light mode is active');
+      // Add your logic for light mode here
+    } else if (newMode === 'dark') {
+      console.log('Dark mode is active');
+    }
+  },
+  { immediate: true } // Trigger immediately to handle the initial value
+);
 
 onMounted(async () => {
   window.addEventListener('mousemove', handleMouseMove);
@@ -85,6 +96,9 @@ onMounted(async () => {
         <div class="gif-container">
           <img id="titleGif" src="/img/title.png" />
         </div>
+        <div class="transparent">
+          <ColorMode />
+        </div>
 
         <!-- Additional layer -->
         <div class="hmpg">
@@ -109,7 +123,10 @@ onMounted(async () => {
   z-index: 0;        
 
 }
-
+.drawer{
+  filter: brightness(200%);
+color: aqua;
+}
 .background {
   position: fixed;  
   top: 0;  
@@ -121,7 +138,6 @@ onMounted(async () => {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  mix-blend-mode: screen;
 
 }
 
@@ -136,7 +152,10 @@ onMounted(async () => {
 }
 
 
+.transparent{
+  display: none;
 
+}
 
 
 .gif-container {
