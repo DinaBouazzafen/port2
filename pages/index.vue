@@ -60,7 +60,7 @@ onMounted(async () => {
 
     <!-- Loading state -->
     <div v-if="isLoading" class="flex items-center justify-center h-screen">
-      <p>Loading...</p>
+      <img src="/img/loader.gif" alt="Is it still loading?" class="w-10 h-10" />
     </div>
 
     <!-- Error state -->

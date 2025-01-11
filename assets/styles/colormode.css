@@ -8,6 +8,9 @@ body {
     background-color: #00fffb;
     color: #800000;
     }
+    .dark-mode .backcolor{
+        background-color: #3d0000;
+    }
     .light-mode .el-drawer {
         background-color: #ff000032;
     }

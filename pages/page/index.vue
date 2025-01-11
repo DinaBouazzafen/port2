@@ -71,6 +71,7 @@ const categories = ref([
   height: auto;
   mix-blend-mode: difference;
   filter: brightness(300%);
+  margin-left: -2%;
 }
 
 /* Categories container */
