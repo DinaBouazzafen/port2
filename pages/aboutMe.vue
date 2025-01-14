@@ -18,7 +18,7 @@
       </div>
   
       <!-- Drawer Section -->
-      <div class="drawer relative z-10 pr-5">
+      <div class="dr relative z-10 pr-5">
         <Drawer />
       </div>
   
@@ -155,11 +155,12 @@ export default {
     border: none; /* Removes any border on the iframe */
     pointer-events: none;
   }
-  .drawer{
+  .dr{
     position: relative;
     z-index: 10;
     padding-right: 5px;
-    scroll-snap-align: start; /* Snap this section to the top of the viewport */
+    scroll-snap-align: start; 
+    mix-blend-mode: difference;
   }
   .aboutmetitle {
     margin: 20px 0;

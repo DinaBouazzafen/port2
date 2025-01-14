@@ -1,8 +1,12 @@
 <template>
   <div>
     <div class="pr-5">
-      <Drawer />
       <cursor />
+
+    </div>
+    <div class="pr-5 dr">
+      <Drawer />
+
     </div>
     <main class="mx-auto space-y-6 px-4 mb-20">
       <!-- Title Image -->
@@ -74,6 +78,7 @@ const categories = ref([
   margin-left: -2%;
 }
 
+
 /* Categories container */
 .categories-container {
   display: grid;
@@ -81,7 +86,7 @@ const categories = ref([
   gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  mix-blend-mode:difference;
+  mix-blend-mode: difference;
 }
 
 /* Card styling */
@@ -136,5 +141,9 @@ const categories = ref([
   font-size: 1.5rem;
   color: white;
   border-radius: 10px;
+}
+
+.dr{
+  mix-blend-mode: difference;
 }
 </style>

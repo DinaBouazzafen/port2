@@ -3,7 +3,7 @@
     <cursor />
     
     <div class="contact-me">
-      <div class="drawer relative z-10 pr-5">
+      <div class="dr relative z-10 pr-5">
           <Drawer />
       </div>
 
@@ -12,6 +12,7 @@
         <img src="/img/contact-me.png" alt="Contact Me" class="title-img" />
         <p class="contact-intro hnmi">Always welcome to send a mail or to befriend me on insta!</p>
       </div>
+      
 
       <!-- Contact Buttons -->
       <div class="contact-buttons">
@@ -49,7 +50,9 @@ name: "ContactMe",
 
 <style scoped>
 
-
+.dr{
+  mix-blend-mode: difference;
+}
 
 .contact-me {
 position: relative;
