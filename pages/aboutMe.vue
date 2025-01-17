@@ -92,7 +92,7 @@ export default {
       this.flippedCards[card] = false;
     },
     scrollToDrawer() {
-      const drawerElement = document.querySelector(".drawer");
+      const drawerElement = document.querySelector(".dr");
       drawerElement.scrollIntoView({ behavior: "smooth" });
     },
   },
