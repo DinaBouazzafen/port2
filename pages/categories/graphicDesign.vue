@@ -120,5 +120,6 @@
 }
 
 .dr{
+  mix-blend-mode: difference;
 }
 </style>

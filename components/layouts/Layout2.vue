@@ -39,7 +39,7 @@
       </div>
 
       <!-- Drawer Section -->
-      <div class="drawer mx-auto p-4">
+      <div class="dr mx-auto p-4">
         <Drawer />
       </div>
 
@@ -102,7 +102,7 @@ const imageLoaded = ref(false);
 
 // Scroll to the Drawer section
 const scrollToDrawer = () => {
-  const drawerElement = document.querySelector(".drawer");
+  const drawerElement = document.querySelector(".dr");
   drawerElement.scrollIntoView({ behavior: "smooth" });
 };
 
@@ -175,7 +175,7 @@ defineProps(['data', 'formatDate']);
   z-index: 11;
   mix-blend-mode: difference;
 }
-.drawer {
+.dr {
   position: relative;
   z-index: 10;
   margin-top: 0px; /* Slight overlap for design alignment */

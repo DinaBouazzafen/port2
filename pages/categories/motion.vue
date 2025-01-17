@@ -1,9 +1,9 @@
 <template>
+  <div class= "cursor"> <cursor /> </div>
+  
   <div>
-    <div class="pr-5">
+    <div class="dr pr-5">
       <Drawer />
-      <cursor />
-
     </div>
     <main class="mx-auto max-w-4xl space-y-6 px-4 mb-20">
       <h1 class="text-6xl font-bold hnmi capitalize">Motion</h1>
@@ -117,5 +117,13 @@ justify-content: center;
 text-align: center;
 padding: 1rem;
 border-radius: 10px;
+}
+.dr{
+  color: aqua;
+  z-index: 1;
+}
+
+.cursor{
+  z-index: 1000;
 }
 </style>

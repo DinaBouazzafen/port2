@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "/Users/dinaab/Desktop/school/new-port-web/port2/node_modules/nuxt/dist/app/entry.js": {
+  "/Users/dinaab/Desktop/school/atelier-webdesign/last-port/port2/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/Users/dinaab/Desktop/school/new-port-web/port2/node_modules/nuxt/dist/app/entry.js"
+    "file": "/Users/dinaab/Desktop/school/atelier-webdesign/last-port/port2/node_modules/nuxt/dist/app/entry.js"
   }
 }

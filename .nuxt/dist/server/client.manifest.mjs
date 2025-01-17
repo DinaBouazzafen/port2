@@ -1,1 +1,1 @@
-export { default } from "file:///Users/dinaab/Desktop/school/new-port-web/port2/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///Users/dinaab/Desktop/school/atelier-webdesign/last-port/port2/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
